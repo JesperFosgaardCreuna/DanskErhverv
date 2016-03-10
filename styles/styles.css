@@ -1,0 +1,276 @@
+nav {
+  background-color: rgba(255, 255, 255, 1);
+  position: fixed;
+  top:0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  height: 80px;
+  line-height: 80px;
+}
+nav img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav a.button-collapse {
+  display: block;
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 0 10px;
+  color: #187998;
+  float: right;
+  line-height: 80px;
+  /*margin: 10px 0 0 10px;*/
+}
+nav a.button-collapse:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+nav a.button-collapse i {
+  display: inline-block;
+  float: left;
+  line-height: 80px;
+}
+nav a.button-collapse span {
+  display: inline-block;
+  line-height: inherit;
+  float: left;
+  font-size: 18px;
+}
+
+/*.parallax-container {
+    height: 65vh;
+
+}*/
+.hero-container{
+  position: relative;
+overflow: hidden;
+
+  max-height: 65vh;
+}
+main{
+  margin-top: 80px;
+}
+.video-container{
+z-index: 90;
+
+}
+video {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  max-width:inherit!important;
+  height: 100%!important;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 90;
+}
+.headline {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  max-height: 65vh;
+  /*height: 800px;*/
+  width: 100vw;
+  text-align: center;
+  /*display: table-cell;
+  vertical-align: middle;*/
+  color: white;
+  padding-top: 15%;
+}
+.headline h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-style: italic;
+  line-height: 5rem;
+  font-weight: 500;
+}
+.headline p {
+  font-size: 2rem;
+}
+.main-section {
+  height: auto;
+  z-index: 100;
+  padding-bottom: 50px;
+  /*background: #f5f5f5;*/
+  /*background-image:url("../images/disruption.jpg");*/
+  background-color: #f5f5f5;
+  color: #187998;
+  /*box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.7);*/
+}
+
+.section:after {
+  content: "";
+}
+.container{
+  position: relative;
+  overflow: hidden;
+}
+.container .grid{
+  position: relative;
+    overflow: hidden;
+}
+.container .primary{
+  position: relative;
+}
+.container .secondary{
+position: absolute;
+ left: 100%;
+ float: left;
+ height: 100%;
+ width: 100%;
+ padding: 0.75rem;
+
+}
+.container h4{
+  float: left;
+}
+.container .secondary i{
+  width: 40px;
+  height: 40px;
+  float: right;
+  text-align: right;
+}
+.container .secondary i:hover{
+cursor: pointer;
+}
+.section .col {
+  display: table;
+  padding: 0.75rem
+}
+.section .col .btn {
+  background-color: #efefef;
+  color: black;
+  border-radius: 0;
+  width: 100%;
+  height: 220px;
+  display: table-cell;
+  /*z-index: 1000;*/
+  vertical-align: bottom;
+  /*box-shadow: 0 1px 10px 0 rgba(0,0,0,0.12),0 0px 2px 0 rgba(0,0,0,0.12);*/
+}
+.section .col p {
+ font-size: 1rem;
+  /*color: rgba(24, 121, 152, 1);*/
+  /*  text-shadow: 0 1px 0 black;*/
+  background: rgba(255, 255, 255, 0.75);
+  /*background: rgba(24, 121, 152, 0.75);*/
+  color: black;
+}
+.op-filter {
+  /*opacity: 0.6;*/
+}
+.shadow-filter {
+  box-shadow: inset 0 0 100px 115px rgba(0, 0, 0, 0.2);
+}
+/*background:
+linear-gradient(
+  to bottom,
+  rgba(0, 0, 0, 0),
+  rgba(0, 0, 0, 0.5)
+),
+url('../images/handel.jpg');*/
+.trade {
+  background-image: url('../images/handel.jpg');
+}
+.transport {
+  background-image: url('../images/transport.jpg');
+  background-size: cover;
+}
+.politik {
+  background-image: url('../images/politik.jpg');
+  background-size: cover;
+}
+.engros {
+  background-image: url('../images/lager.jpg');
+  background-size: cover;
+}
+.e-handel {
+  background-image: url('../images/e-handel.jpg');
+  background-size: cover;
+}
+.raadgivning {
+  background-image: url('../images/raadgivning.jpg');
+  background-size: cover;
+}
+.hotline {
+  background-image: url('../images/hotline.jpg');
+  background-size: cover;
+}
+.energi {
+  background-image: url('../images/energi.jpg');
+  background-size: cover;
+}
+.klima {
+  background-image: url('../images/klima.jpg');
+  background-size: cover;
+}
+
+
+/*.transport::after{
+  content: '';
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #000;
+}*/
+
+.section .col .btn:hover, .btn-large:hover .trade:hover {
+  background-color: #bdbdbd;
+  opacity: 0.6;
+  box-shadow: none;
+}
+
+/*.overlay{
+  position:relative;
+  top: 0;
+  left: 0;
+  width:inherit;
+  height:inherit;
+  background-color: red;
+
+  /*background-color: rgba(255, 0, 0, 0.5);*/
+
+
+/*}*/
+
+footer.page-footer {
+  margin-top: 0;
+  background-color: #004F6A;
+}
+
+@media screen and (max-width:768px) {
+  .headline h1 {
+    font-size: 4rem;
+  }
+  .headline p {
+    font-size: 2rem;
+  }
+  .headline {
+    padding-top: 5%;
+  }
+}
+/*@media screen and (min-width:690px) {
+  .row .col.m4 {
+      width: 33.3333333333%;
+  }
+
+}*/
+@media screen and (max-width:480px) {
+  .headline {
+    padding-top:0;
+  }
+  .headline h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+  .headline p {
+    font-size: 1.5rem;
+  }
+}
